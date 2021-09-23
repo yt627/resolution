@@ -255,11 +255,3 @@ figure
 stem(fff,erro2);
 xlabel('频率（Hz）');
 ylabel('幅度误差');
-
-
-
-% figure
-% stem(f3,abs(s_ift3));
-% hold on
-% stem(ff,abs(S_ift_sort1));
-% h=legend('真实宽带','合成宽带');
