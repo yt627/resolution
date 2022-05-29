@@ -11,9 +11,9 @@ num=size(target,1);
 %% 成像参数设置
 c = 3e8;
 R0 = 0.57;   %场景中心距离阵列平面的距离
-fmin = 75e9;
+fmin = 10e9;
 % fmax = 20e9;
-B = 35e9;   %信号带宽
+B = 10e9;   %信号带宽
 fc = fmin+0.5*B;
 lambda = c/fc;   %中心频率处波长
 Nx = 200;
@@ -171,3 +171,5 @@ end
 S_iftxyz=zeros(Nx,Nf2);
 S_iftxyz=fftshift(ifft2(fftshift((S1))));
 end
+
+%% 增加一段注释
